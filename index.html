@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-1">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-center mb-2">Inicio de Sesión</h2>
+            <form id="form_Login">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                    <div class="alert alert-dismissible fade" role="alert" id="userErrMes">
+                        <p id="userErrText"></p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password">                    
+                    <div class="alert alert-dismissible fade" role="alert" id="passErrMes">
+                        <p id="passErrText"></p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" id="btnEnviar">Enviar</button>
+                    <button type="button" class="btn btn-success" id="btnLimpiar">Limpiar</button>
+                </div>
+                <div class="alert alert-dismissible fade" role="alert" id="alertMessage">
+                    <p id="alertText"></p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
